@@ -2,15 +2,12 @@ def main():
     display_main_menu()
     
     all_temps = get_user_input()
-    sorted_temps = sort_temps(all_temps)
+    
     average_temp = calc_average(all_temps)
     min_max = find_min_max(all_temps)
-    median_temp = find_median(sorted_temps)
-
-    print("In Ascending Order", sorted_temps)
     print("The Average Temperature is", average_temp)
     print("The Minimum and Maximum Temperatures are", min_max)
-    print("The Median Temperature is", median_temp)
+    
 
 def display_main_menu():
     print("display_main_menu")
@@ -50,15 +47,6 @@ def find_min_max(all_temps):
 
     return min_max
 
-def find_median(sorted_temps):
-    middle_index = len(sorted_temps) // 2
 
-    if len(sorted_temps) % 2 == 1:
-        median_temp = sorted_temps[middle_index]
-    else:
-        # If the number of elements is even, calculate the average of the two middle elements
-        median_temp = (sorted_temps[middle_index - 1] + sorted_temps[middle_index]) / 2
-    
-    return median_temp
 
 main()
