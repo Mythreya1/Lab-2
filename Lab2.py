@@ -7,7 +7,7 @@ def main():
     min_max = find_min_max(all_temps)
     sorted_temps = sort_temps(all_temps)
     median_temp = find_median(sorted_temps)
-    print("In Ascending Order", sorted_temps)
+    print("In Ascending Order:", sorted_temps)
     print("The Median Temperature is", median_temp)
     print("The Average Temperature is", average_temp)
     print("The Minimum and Maximum Temperatures are", min_max)
