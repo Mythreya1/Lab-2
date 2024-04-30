@@ -21,9 +21,10 @@ def display_main_menu():
 def get_user_input():
     print("get_user_input")
 
-    user_input = input()
+    #user_input = input()
+    user_input = [23, 56, 73, 90, 12, 35, 83, 52, 61]
 
-    all_temps = [float(num) for num in (user_input.split(","))]
+    all_temps = [float(num) for num in user_input]
     return all_temps
 
 def sort_temps(all_temps):
